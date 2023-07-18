@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bare bone layout</title>
+    <meta name="author" content="Your site name">
+    <meta name="description" content="A breif description"><!--It is good practise to se these tags to improve the ranking of your site (SEO search engin optomization )-->
+    
+    <!--[This gives us the following, which could be considered the bare minimum of <meta> tags necessary to make a web page amenable for sharing on social media:]
+        <meta property="og:title" content="European Travel Destinations">
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="Offering tour packages for individuals or groups.">
+        <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+        <meta property="og:url" content="http://euro-travel-example.com/index.htm">
+        <meta name="twitter:card" content="summary_large_image">
+    -->
+    
+    <!--Open graph protocole (increase the user experience by alowing the social media network to  creating the preveiw of the shared link without clicking on the link )-->
+    <!-- this section is use to if you are sharing the page on th socia media
+    <meta property="og:title" content="A breif description">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mywebsite">
+    <meta proerty="og:description" content="A breif description">
+    <meta proerty="og:image" centent="image.png"> 
+    -->
+
+    <!-- for icon in the web broswer 
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="img/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    -->
+
+    <!-- Here include tour CSS file link -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <head>
+        <!-- Add the logo or websy=te name here -->
+        <p>Header</p>
+    </head>
+
+    <nav>
+        <!-- Add the nav of your website Here -->
+    </nav>
+
+    <main>
+        <input type="button" value="Click me" onclick="alert('Are you sure that you want to proceed? ')" >
+        <button onclick=" alert('Are you sure that you want to proceed? ')">
+            <img src="download.jpg" value="Submit" 
+        alt="Submit the form" height="64" width="64">
+        </button><br>
+
+        <input type="checkbox"id="dog" name="dog" value="Dog">
+        <label for="dog">I like dogs</label><br>
+        <input type="checkbox" id="cat" name="cat" value="Cat">
+        <label for="cat">I like cats</label><br>
+
+        <input type="radio" id="light" name="theme" value="Light"> 
+        <label for="light">Light</label><br>
+        <input type="radio" id="dark" name="theme" value="Dark"> 
+        <label for="dark">Dark</label> <br>
+
+        <form action="myserver.com" method="POST">
+            <input type="submit" value="Submit" />
+            </form><br>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="First name" value="First name"><br>
+
+            <label for="pwd">Password:</label> 
+            <input type="password" id="pwd" name="pwd"> <br>
+
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="date of birth"><br>
+
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <labelfor="myfile">Select a file:</labelfor=>
+            <input type="file" id="myfile" name="myfile"><br>
+
+            <input type="hidden" id="custId" name="custId" value="3487"><br>
+
+
+            <input type="image"src="download.jpg" alt="Submit" width="48" height="48"><br>
+
+
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="10"><br>
+
+
+            <input type="reset"><br>
+
+            <label for="gsearch">Search in Google:</label>
+            <input type="search" id="gsearch" name="gsearch"><br>
+
+
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt"><br>
+
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}"><br>
+
+
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage"><br>
+
+
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week"><br>
+
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth" min="1930-01" value="2000-01"><br>
+        <!-- Add the main content of your website here -->
+        <h1>Heading</h1>
+    </main>
+
+    <footer>
+        <!-- Add the copy rights notice and the other elements here -->
+        <p>Footer</p>
+    </footer>
+
+    <!-- Include the javascript file here -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
